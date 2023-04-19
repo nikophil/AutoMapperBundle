@@ -1,0 +1,16 @@
+framework:
+    secret: jane-automapper
+    property_info: ~
+    test: ~
+
+jane_auto_mapper:
+    normalizer: true
+    name_converter: DummyApp\IdNameConverter
+
+services:
+  _defaults:
+    autoconfigure: true
+
+  DummyApp\UserMapperConfiguration: ~
+  DummyApp\IdNameConverter: ~
+  DummyApp\Transformer\MoneyTransformerFactory: ~
